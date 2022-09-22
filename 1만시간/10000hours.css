@@ -1,0 +1,178 @@
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+main {
+  margin-top: 50px;
+}
+body {
+  font-family: 'GmarketSansLight';
+  background-color: #5B2386;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.sronly{
+  position : absolute;
+  overflow : hidden;
+  clip : rect(0,0,0,0);
+  margin : -1px;
+  width : 1px;
+  height : 1px;
+}
+
+h1 {
+  margin: 50px;
+  position: relative;
+  background-image: url(img/clock.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title-img {
+  max-width: 560px;
+}
+
+.betteryou-txt {
+  display: inline;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.intro {
+  overflow: hidden;
+}
+
+.intro img {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.intro .txt-desc {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 20px;
+}
+
+.title-desc {
+  max-width: 200px;
+  margin: 100px auto; 
+}
+
+p, small {
+  color: white;
+  font-size: 20px;
+}
+
+form.contnt-input p {
+  font-weight: bolder;
+}
+form.contnt-input input::placeholder {
+  font-size: 20px;
+  font-weight: bold;
+  color: #babcbe;
+}
+
+.contnt-input input, p.txt-wannabe {
+  margin-bottom: 10px;  
+}
+
+input {
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  height: 26px;
+  padding: 15px 20px 15px 20px;
+}
+
+form image {
+  display: inline-block;
+  vertical-align: bottom;
+}
+.cont-result .txt-wannabe {
+  margin: 0;
+}
+
+.cont-footer {
+  display: block;
+  text-align: center;
+}
+
+.cont-footer img {
+  margin-bottom: 0;
+}
+
+.cont-footer small {
+  font-size: 10px;
+  margin: 20px;
+}
+
+div.modal {
+  display: flex;
+  margin: 0 auto;
+  /* display: none; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.cont-modal {
+  position: fixed;
+  display: flex;
+  margin: 40px auto;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.modal img {
+  margin-bottom: 20px;
+}
+
+.modal button {
+  background: #FCEE21;
+  height: 48px;
+  width: 440px;
+  border: none;
+  border-radius: 24px;
+  color: #5B2386;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.cont-modal {
+  display: none;
+}
+
+#modal-toggle {
+  display: none;
+}
+
+
+#modal-toggle:checked + .cont-modal {
+  display: block;
+  width: 600px;
+  height: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
